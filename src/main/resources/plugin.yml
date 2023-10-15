@@ -1,0 +1,11 @@
+name: MatchSystem
+version: '${project.version}'
+main: demon.fund.matchsystem.MatchSystem
+depend:
+  - 'SelectSystem'
+  - 'GermPlugin'
+  - 'DemonLib'
+  - 'Backpack'
+softdepend:
+  - 'PlaceholderAPI'
+  - 'DungeonPlus'

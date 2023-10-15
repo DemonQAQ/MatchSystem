@@ -1,0 +1,557 @@
+roomTeam:
+  options:
+    startX: "w*0"
+    startY: "h*0"
+    escCancel: false
+  bg:
+    type: 0
+    enable: false
+    path: 'local<->textures/teamSystem/dungeonTeam/bg.png'
+    locationX: "0"
+    locationY: "0"
+    locationZ: "0"
+    width: "w"
+    height: "h"
+  exit:
+    type: button
+    enable: true
+    defaultPath: 'local<->textures/teamSystem/dungeonTeam/exit.png'
+    hoverPath: 'local<->textures/teamSystem/dungeonTeam/exit_down.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: "w*0/1920"
+    locationY: "h*25/1080"
+    locationZ: "4"
+    width: "w*199/1920"
+    height: "h*69/1080"
+    swallow: true
+    interactCooldown: 100
+    clickDos:
+      - "open<->null"
+  chating:
+    type: button
+    enable: true
+    defaultPath: 'local<->textures/teamSystem/dungeonTeam/chat.png'
+    hoverPath: 'local<->textures/teamSystem/dungeonTeam/chat_down.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: "w*44/1920"
+    locationY: "h*939/1080"
+    locationZ: "4"
+    width: "w*84/1920"
+    height: "h*68/1080"
+    swallow: true
+    interactCooldown: 100
+  dungeonInfo:
+    type: button
+    enable: true
+    defaultPath: 'local<->textures/teamSystem/dungeonTeam/dungeonInfo.png'
+    hoverPath: 'local<->textures/teamSystem/dungeonTeam/dungeonInfo_down.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: "w*1481/1920"
+    locationY: "h*939/1080"
+    locationZ: "4"
+    width: "w*248/1920"
+    height: "h*68/1080"
+    swallow: true
+    interactCooldown: 100
+  start:
+    type: button
+    enable: true
+    defaultPath: 'local<->textures/teamSystem/dungeonTeam/start.png'
+    hoverPath: 'local<->textures/teamSystem/dungeonTeam/start_down.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: "w*748/1920"
+    locationY: "h*921/1080"
+    locationZ: "4"
+    width: "w*424/1920"
+    height: "h*102/1080"
+    swallow: true
+    interactCooldown: 100
+  ready:
+    type: button
+    enable: true
+    defaultPath: 'local<->textures/teamSystem/dungeonTeam/prepare.png'
+    hoverPath: 'local<->textures/teamSystem/dungeonTeam/prepare_down.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: "w*748/1920"
+    locationY: "h*921/1080"
+    locationZ: "4"
+    width: "w*424/1920"
+    height: "h*102/1080"
+    swallow: true
+    interactCooldown: 100
+  unready:
+    type: button
+    enable: true
+    defaultPath: 'local<->textures/teamSystem/dungeonTeam/ready.png'
+    hoverPath: 'local<->textures/teamSystem/dungeonTeam/ready_down.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: "w*748/1920"
+    locationY: "h*921/1080"
+    locationZ: "4"
+    width: "w*424/1920"
+    height: "h*102/1080"
+    swallow: true
+    interactCooldown: 100
+  waitReady:
+    type: button
+    enable: true
+    defaultPath: 'local<->textures/teamSystem/dungeonTeam/wait.png'
+    hoverPath: 'local<->textures/teamSystem/dungeonTeam/wait.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: "w*748/1920"
+    locationY: "h*921/1080"
+    locationZ: "4"
+    width: "w*424/1920"
+    height: "h*102/1080"
+    swallow: true
+    interactCooldown: 100
+  playerName0:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "xie"
+    fontSize: 28
+    stroke: 0.1
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    splitWidth: "w*1032/1920"
+    texts:
+      - "名字1"
+    locationX: "w*217/1920"
+    locationY: "h*160/1080"
+    locationZ: "25"
+  playerLevel0:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "xie"
+    fontSize: 18
+    stroke: 0.1
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    splitWidth: "w*1032/1920"
+    texts:
+      - "Lv.40"
+    locationX: "w*217/1920"
+    locationY: "h*200/1080"
+    locationZ: "25"
+  readyIcon0:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/readyIcon.png'
+    locationX: "w*179/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  warningIcon0:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/warningIcon.png'
+    locationX: "w*179/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  addIcon0:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/addIcon.png'
+    locationX: "w*179/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  waitIcon0:
+    type: gif
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/waitIcon.gif'
+    cycle: -1
+    locationX: "w*179/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  bgEntity0:
+    type: entity
+    enable: true
+    name: "李洛川"
+    model: 'zombie'
+    followCursor: false
+    lookAtX: "w*217/1920"
+    lookAtY: "h*410/1080"
+    rotateX: "0"
+    #人物的Y轴旋转角度
+    #配合横向滑动条的变量%guiName_partName_scrolledH%可以制作360人物模型预览
+    rotateY: "0"
+    size: "100"
+    #width height这两个是因为每个模型的大小都不同 没办法自适应大小判断悬浮 所以可以重新指定判断悬浮的大小区域 不会对实际渲染造成影响
+    width: 'w*0.1'
+    height: 'h*0.1'
+    locationX: "w*217/1920"
+    locationY: "h*820/1080"
+    locationZ: "-512"
+  playerName1:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "xie"
+    fontSize: 28
+    stroke: 0.1
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    splitWidth: "w*1032/1920"
+    texts:
+      - "名字1"
+    locationX: "w*588/1920"
+    locationY: "h*160/1080"
+    locationZ: "25"
+  playerLevel1:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "xie"
+    fontSize: 18
+    stroke: 0.1
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    splitWidth: "w*1032/1920"
+    texts:
+      - "Lv.40"
+    locationX: "w*588/1920"
+    locationY: "h*200/1080"
+    locationZ: "25"
+  readyIcon1:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/readyIcon.png'
+    locationX: "w*550/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  warningIcon1:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/warningIcon.png'
+    locationX: "w*550/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  addIcon1:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/addIcon.png'
+    locationX: "w*550/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  waitIcon1:
+    type: gif
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/waitIcon.gif'
+    cycle: -1
+    locationX: "w*550/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  bgEntity1:
+    type: entity
+    enable: true
+    name: "李洛川"
+    model: 'zombie'
+    followCursor: false
+    lookAtX: "w*588/1920"
+    lookAtY: "h*410/1080"
+    rotateX: "0"
+    #人物的Y轴旋转角度
+    #配合横向滑动条的变量%guiName_partName_scrolledH%可以制作360人物模型预览
+    rotateY: "0"
+    size: "100"
+    #width height这两个是因为每个模型的大小都不同 没办法自适应大小判断悬浮 所以可以重新指定判断悬浮的大小区域 不会对实际渲染造成影响
+    width: 'w*0.1'
+    height: 'h*0.1'
+    locationX: "w*588/1920"
+    locationY: "h*820/1080"
+    locationZ: "-512"
+  playerName2:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "xie"
+    fontSize: 28
+    stroke: 0.1
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    splitWidth: "w*1032/1920"
+    texts:
+      - "名字1"
+    locationX: "w*959/1920"
+    locationY: "h*160/1080"
+    locationZ: "25"
+  playerLevel2:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "xie"
+    fontSize: 18
+    stroke: 0.1
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    splitWidth: "w*1032/1920"
+    texts:
+      - "Lv.40"
+    locationX: "w*959/1920"
+    locationY: "h*200/1080"
+    locationZ: "25"
+  readyIcon2:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/readyIcon.png'
+    locationX: "w*921/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  warningIcon2:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/warningIcon.png'
+    locationX: "w*921/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  addIcon2:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/addIcon.png'
+    locationX: "w*921/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  waitIcon2:
+    type: gif
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/waitIcon.gif'
+    cycle: -1
+    locationX: "w*921/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  bgEntity2:
+    type: entity
+    enable: true
+    name: "李洛川"
+    model: 'zombie'
+    followCursor: false
+    lookAtX: "w*959/1920"
+    lookAtY: "h*410/1080"
+    rotateX: "0"
+    #人物的Y轴旋转角度
+    #配合横向滑动条的变量%guiName_partName_scrolledH%可以制作360人物模型预览
+    rotateY: "0"
+    size: "100"
+    #width height这两个是因为每个模型的大小都不同 没办法自适应大小判断悬浮 所以可以重新指定判断悬浮的大小区域 不会对实际渲染造成影响
+    width: 'w*0.1'
+    height: 'h*0.1'
+    locationX: "w*959/1920"
+    locationY: "h*820/1080"
+    locationZ: "-512"
+  playerName3:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "xie"
+    fontSize: 28
+    stroke: 0.1
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    splitWidth: "w*1032/1920"
+    texts:
+      - "名字1"
+    locationX: "w*1330/1920"
+    locationY: "h*160/1080"
+    locationZ: "25"
+  playerLevel3:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "xie"
+    fontSize: 18
+    stroke: 0.1
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    splitWidth: "w*1032/1920"
+    texts:
+      - "Lv.40"
+    locationX: "w*1330/1920"
+    locationY: "h*200/1080"
+    locationZ: "25"
+  readyIcon3:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/readyIcon.png'
+    locationX: "w*1292/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  warningIcon3:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/warningIcon.png'
+    locationX: "w*1292/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  addIcon3:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/addIcon.png'
+    locationX: "w*1292/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  waitIcon3:
+    type: gif
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/waitIcon.gif'
+    cycle: -1
+    locationX: "w*1292/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  bgEntity3:
+    type: entity
+    enable: true
+    name: "李洛川"
+    model: 'zombie'
+    followCursor: false
+    lookAtX: "w*1330/1920"
+    lookAtY: "h*410/1080"
+    rotateX: "0"
+    #人物的Y轴旋转角度
+    #配合横向滑动条的变量%guiName_partName_scrolledH%可以制作360人物模型预览
+    rotateY: "0"
+    size: "100"
+    #width height这两个是因为每个模型的大小都不同 没办法自适应大小判断悬浮 所以可以重新指定判断悬浮的大小区域 不会对实际渲染造成影响
+    width: 'w*0.1'
+    height: 'h*0.1'
+    locationX: "w*1330/1920"
+    locationY: "h*820/1080"
+    locationZ: "-512"
+  playerName4:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "xie"
+    fontSize: 28
+    stroke: 0.1
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    splitWidth: "w*1032/1920"
+    texts:
+      - "名字1"
+    locationX: "w*1702/1920"
+    locationY: "h*160/1080"
+    locationZ: "25"
+  playerLevel4:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "xie"
+    fontSize: 18
+    stroke: 0.1
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    splitWidth: "w*1032/1920"
+    texts:
+      - "Lv.40"
+    locationX: "w*1702/1920"
+    locationY: "h*200/1080"
+    locationZ: "25"
+  readyIcon4:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/readyIcon.png'
+    locationX: "w*1664/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  warningIcon4:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/warningIcon.png'
+    locationX: "w*1664/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  addIcon4:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/addIcon.png'
+    locationX: "w*1664/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  waitIcon4:
+    type: gif
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonTeam/waitIcon.gif'
+    cycle: -1
+    locationX: "w*1664/1920"
+    locationY: "h*502/1080"
+    locationZ: "1"
+    width: "w*76/1920"
+    height: "h*76/1080"
+  bgEntity4:
+    type: entity
+    enable: true
+    name: "李洛川"
+    model: 'zombie'
+    followCursor: false
+    lookAtX: "w*1702/1920"
+    lookAtY: "h*410/1080"
+    rotateX: "0"
+    #人物的Y轴旋转角度
+    #配合横向滑动条的变量%guiName_partName_scrolledH%可以制作360人物模型预览
+    rotateY: "0"
+    size: "100"
+    #width height这两个是因为每个模型的大小都不同 没办法自适应大小判断悬浮 所以可以重新指定判断悬浮的大小区域 不会对实际渲染造成影响
+    width: 'w*0.1'
+    height: 'h*0.1'
+    locationX: "w*1702/1920"
+    locationY: "h*820/1080"
+    locationZ: "-512"

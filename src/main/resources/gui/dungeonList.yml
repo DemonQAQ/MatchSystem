@@ -1,0 +1,250 @@
+dungeonList:
+  options:
+    startX: "w*0"
+    startY: "h*0"
+    escCancel: false
+  bg:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonList/bg.png'
+    locationX: "0"
+    locationY: "0"
+    locationZ: "0"
+    width: "w"
+    height: "h"
+  exit:
+    type: button
+    enable: true
+    defaultPath: 'local<->textures/teamSystem/dungeonList/exit.png'
+    hoverPath: 'local<->textures/teamSystem/dungeonList/exit_down.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: 'w*1797/1920'
+    locationY: 'h*7/1080'
+    locationZ: "1"
+    width: 'w*88/1920'
+    height: 'h*88/1080'
+    swallow: true
+    interactCooldown: 100
+    clickDos: 
+      - "open<->null"
+  info:
+    type: button
+    enable: true
+    defaultPath: 'local<->textures/teamSystem/dungeonList/info.png'
+    hoverPath: 'local<->textures/teamSystem/dungeonList/info_down.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: 'w*1823/1920'
+    locationY: 'h*120/1080'
+    locationZ: "1"
+    width: 'w*41/1920'
+    height: 'h*42/1080'
+    swallow: true
+    interactCooldown: 100
+  dungeonBg:
+    type: 0
+    enable: true
+    path: 'local<->textures/teamSystem/dungeonList/bgNull.png'
+    locationX: "w*936/1920"
+    locationY: "h*139/1080"
+    locationZ: "6"
+    width: "w*480/1920"
+    height: "h*270/1080"
+  dungeonName:
+    type: label
+    enable: true
+    align: "left"
+    scale: '1'
+    font: "simhei"
+    fontSize: 26
+    stroke: 0.2
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    texts:
+      - "副本名字"
+    locationX: "w*1468/1920"
+    locationY: "h*140/1080"
+    locationZ: "5"
+  dungeonInfo:
+    type: label
+    enable: true
+    align: "left"
+    scale: '1'
+    font: "simhei"
+    fontSize: 26
+    stroke: 0.2
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    texts:
+      - "测试测试测试测试测试测试测试"
+      - "测试测试测试测试测试测试测试"
+      - "测试测试测试测试测试测试测试"
+      - "测试测试测试测试测试测试测试"
+    locationX: "w*1468/1920"
+    locationY: "h*200/1080"
+    locationZ: "5"
+  combatName:
+    type: label
+    enable: true
+    align: "left"
+    scale: '1'
+    font: "simhei"
+    fontSize: 26
+    stroke: 0.2
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    texts:
+      - "副本名字"
+    locationX: "w*945/1920"
+    locationY: "h*460/1080"
+    locationZ: "5"
+  combatInfo:
+    type: label
+    enable: true
+    align: "left"
+    scale: '1'
+    font: "simhei"
+    fontSize: 24
+    stroke: 0.2
+    strokeColor: 0xFFFFFFFF
+    shadow: false
+    lineSpace: '0'
+    texts:
+      - "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+      - "测试测试测试测试测试测试"
+    locationX: "w*945/1920"
+    locationY: "h*500/1080"
+    locationZ: "5"
+  buttonList:
+    type: scroll
+    enable: true
+    width: 'w*891/1920'
+    height: 'h*886/1080'
+    locationX: 'w*13/1920'
+    locationY: 'h*114/1080'
+    relative: true
+    scrollDraggable: true
+    invalidV: false
+    scrollableV: 'auto + 5'
+    scrolledV: '0'
+    scrollableParts:
+      buttonTemplate:
+        type: checkbox
+        enable: true
+        defaultPath: 'local<->textures/teamSystem/dungeonList/button.png'
+        hoverPath: 'local<->textures/teamSystem/dungeonList/button_hover.png'
+        checkedPath: "local<->textures/teamSystem/dungeonList/button_checked.png"
+        clickSound: 'germmod:按钮_按下'
+        checked: false
+        locationX: "w*0/1920"
+        locationY: "h*4/1080"
+        locationZ: "1"
+        width: "w*855/1920"
+        height: "h*113/1080"
+        swallow: true
+        realHover: true
+      dungeonNameTemplate:
+        type: label
+        enable: true
+        align: "left"
+        scale: '1'
+        font: "simhei"
+        fontSize: 30
+        stroke: 0.2
+        strokeColor: 0xFFFFFFFF
+        shadow: false
+        lineSpace: '0'
+        texts:
+          - "副本名字"
+        locationX: "w*51/1920"
+        locationY: "h*18/1080"
+        locationZ: "5"
+  itemList:
+    type: scroll
+    enable: true
+    width: 'w*936/1920'
+    height: 'h*99/1080'
+    locationX: 'w*941/1920'
+    locationY: 'h*794/1080'
+    locationZ: "4"
+    relative: true
+    scrollDraggable: true
+    invalidH: false
+    scrollableH: 'auto + 5'
+    scrolledH: '0'
+    scrollableParts:
+      itemTemplate:
+        type: item
+        enable: true
+        size: "w*84/1920"
+        locationX: 'w*54/1920'
+        locationY: 'h*44/1080'
+        locationZ: "1"
+        itemStack:
+          ==: org.bukkit.inventory.ItemStack
+          type: DIAMOND_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '§2我是名字'
+            lore:
+              - '§f我是描述第一行'
+              - '§7颜色符请用§'
+      itemBackBgTemplate:
+        type: 0
+        enable: true
+        path: 'local<->textures/teamSystem/dungeonList/slotBg.png'
+        locationX: "w*0/1920"
+        locationY: "h*1/1080"
+        locationZ: "1"
+        width: "w*95/1920"
+        height: "h*95/1080"
+      itemLevelBgTemplate:
+        type: 0
+        enable: false
+        path: 'local<->textures/teamSystem/dungeonList/slotLevel4.png'
+        locationX: "w*0/1920"
+        locationY: "h*1/1080"
+        locationZ: "2"
+        width: "w*95/1920"
+        height: "h*95/1080"
+      itemFrontBgTemplate:
+        type: checkbox
+        enable: true
+        defaultPath: 'local<->textures/teamSystem/dungeonList/slotFrontBg.png'
+        hoverPath: 'local<->textures/teamSystem/dungeonList/slotHover.png'
+        checkedPath: "local<->textures/teamSystem/dungeonList/slotSelected.png"
+        clickSound: 'germmod:按钮_按下'
+        checked: false
+        locationX: 'w*0/1920'
+        locationY: 'h*1/1080'
+        locationZ: "64"
+        width: "w*95/1920"
+        height: "h*95/1080"
+      relicIconTemplate:
+        type: 0
+        enable: true
+        path: 'local<->textures/teamSystem/dungeonList/relicSlotIcon.png'
+        locationX: "w*0/1920"
+        locationY: "h*1/1080"
+        locationZ: "63"
+        width: "w*95/1920"
+        height: "h*95/1080"
+      labelTemplate:
+        type: label
+        enable: true
+        align: "center"
+        scale: '1'
+        font: "simhei"
+        fontSize: 20
+        stroke: 0.2
+        strokeColor: 0xFFFFFFFF
+        shadow: false
+        lineSpace: '0'
+        texts:
+          - "lv.10"
+        locationX: "w*47/1920"
+        locationY: "h*70/1080"
+        locationZ: "65"
