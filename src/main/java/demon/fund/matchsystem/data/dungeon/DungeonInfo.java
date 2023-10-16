@@ -1,5 +1,7 @@
 package demon.fund.matchsystem.data.dungeon;
 
+import demon.fund.matchsystem.data.team.TeamType;
+
 import java.util.ArrayList;
 
 /**
@@ -16,9 +18,10 @@ public class DungeonInfo
     public final LimitUnit limitUnit;
     public final ArrayList<String> description;
     public final ArrayList<String> challengeHelp;
+    public final ArrayList<TeamType> teamTypes;
     public final ArrayList<DungeonDifficultyInfo> difficultyInfos;
 
-    public DungeonInfo(String dungeonName, String texture, String challengesTime, LimitUnit limitUnit, ArrayList<String> description, ArrayList<String> challengeHelp, ArrayList<DungeonDifficultyInfo> difficultyInfos)
+    public DungeonInfo(String dungeonName, String texture, String challengesTime, LimitUnit limitUnit, ArrayList<String> description, ArrayList<String> challengeHelp, ArrayList<TeamType> teamTypes, ArrayList<DungeonDifficultyInfo> difficultyInfos)
     {
         this.dungeonName = dungeonName;
         this.texture = texture;
@@ -26,6 +29,7 @@ public class DungeonInfo
         this.limitUnit = limitUnit;
         this.description = description;
         this.challengeHelp = challengeHelp;
+        this.teamTypes = teamTypes;
         this.difficultyInfos = difficultyInfos;
     }
 }

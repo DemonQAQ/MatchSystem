@@ -6,6 +6,14 @@ dungeonInfo:
   challengesTime: -1
   #次数的刷新时间，可选日周三个单位 -> day、week、month
   limitUnit: "day"
+  #允许挑战的人数数量限制，类型有
+  #SOLO               -   单人模式
+  #PROJECTION         -   狗粮本，1-4人
+  #VARIATION_HISTORY  -   装备本，1-4人
+  #FANTASY_HISTORY    -   团本，5/10人
+  teamType:
+    - "SOLO"
+    - "PROJECTION"
   description:
     - "描述1"
     - "描述2"

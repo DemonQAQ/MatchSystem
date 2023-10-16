@@ -132,7 +132,7 @@ dungeonList:
     scrollableParts:
       buttonTemplate:
         type: checkbox
-        enable: true
+        enable: false
         defaultPath: 'local<->textures/teamSystem/dungeonList/button.png'
         hoverPath: 'local<->textures/teamSystem/dungeonList/button_hover.png'
         checkedPath: "local<->textures/teamSystem/dungeonList/button_checked.png"
@@ -147,7 +147,7 @@ dungeonList:
         realHover: true
       dungeonNameTemplate:
         type: label
-        enable: true
+        enable: false
         align: "left"
         scale: '1'
         font: "simhei"
