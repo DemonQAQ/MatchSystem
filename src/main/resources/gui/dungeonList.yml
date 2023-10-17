@@ -177,7 +177,7 @@ dungeonList:
     scrollableParts:
       itemTemplate:
         type: item
-        enable: true
+        enable: false
         size: "w*84/1920"
         locationX: 'w*54/1920'
         locationY: 'h*44/1080'
@@ -194,7 +194,7 @@ dungeonList:
               - '§7颜色符请用§'
       itemBackBgTemplate:
         type: 0
-        enable: true
+        enable: false
         path: 'local<->textures/teamSystem/dungeonList/slotBg.png'
         locationX: "w*0/1920"
         locationY: "h*1/1080"
@@ -211,13 +211,11 @@ dungeonList:
         width: "w*95/1920"
         height: "h*95/1080"
       itemFrontBgTemplate:
-        type: checkbox
-        enable: true
+        type: button
+        enable: false
         defaultPath: 'local<->textures/teamSystem/dungeonList/slotFrontBg.png'
         hoverPath: 'local<->textures/teamSystem/dungeonList/slotHover.png'
-        checkedPath: "local<->textures/teamSystem/dungeonList/slotSelected.png"
         clickSound: 'germmod:按钮_按下'
-        checked: false
         locationX: 'w*0/1920'
         locationY: 'h*1/1080'
         locationZ: "64"
@@ -225,7 +223,7 @@ dungeonList:
         height: "h*95/1080"
       relicIconTemplate:
         type: 0
-        enable: true
+        enable: false
         path: 'local<->textures/teamSystem/dungeonList/relicSlotIcon.png'
         locationX: "w*0/1920"
         locationY: "h*1/1080"
@@ -234,7 +232,7 @@ dungeonList:
         height: "h*95/1080"
       labelTemplate:
         type: label
-        enable: true
+        enable: false
         align: "center"
         scale: '1'
         font: "simhei"

@@ -32,4 +32,12 @@ public class DungeonInfo
         this.teamTypes = teamTypes;
         this.difficultyInfos = difficultyInfos;
     }
+
+    public String getDungeonName(int difficulty)
+    {
+        DungeonDifficultyInfo difficultyInfo;
+        if (difficulty >= difficultyInfos.size()) difficultyInfo = difficultyInfos.get(0);
+        else difficultyInfo = difficultyInfos.get(difficulty);
+        return difficultyInfo.targetDungeon;
+    }
 }

@@ -9,3 +9,6 @@ depend:
 softdepend:
   - 'PlaceholderAPI'
   - 'DungeonPlus'
+commands:
+  match:
+    description: "match dungeon"

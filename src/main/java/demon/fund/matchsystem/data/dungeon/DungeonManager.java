@@ -11,6 +11,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * MatchSystem demon.fund.matchsystem.controller
@@ -25,8 +26,9 @@ public abstract class DungeonManager
     public static void init()
     {
         ConfigUtils.saveResource(MatchSystem.plugin, "dungeon/dungeonTemplate.yml", true);
-        File dungeonFolder = new File("dungeon");
-        for (File file : dungeonFolder.listFiles())
+        File dungeonFolder = new File(MatchSystem.plugin.getDataFolder() + "/dungeon");
+        MatchSystem.logger.info(dungeonFolder.isDirectory() + "," + dungeonFolder.canRead());
+        for (File file : Objects.requireNonNull(dungeonFolder.listFiles()))
         {
             if (file.getName().endsWith(".yml") && !file.getName().equals("dungeonTemplate.yml"))
             {
