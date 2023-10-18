@@ -33,6 +33,6 @@ public abstract class DungeonUtil
         Team dpTeam = Team.Companion.create(player, uuids);
         DungeonContent content = DungeonPlus.contentManager.content.get(dungeonName);
         if (content == null) return;
-        Dungeon.Companion.builder(dpTeam, content, null, false);
+        Dungeon.Companion.builder(dpTeam, content, null, false).start();
     }
 }

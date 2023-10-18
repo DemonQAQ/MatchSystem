@@ -6,7 +6,9 @@ import demon.fund.matchsystem.gui.dungeon.DungeonGuiManager;
 import demon.fund.matchsystem.gui.team.TeamGuiManager;
 import demon.fund.matchsystem.gui.team.TeamHudManager;
 import demon.fund.matchsystem.listener.CommandListener;
+import demon.fund.matchsystem.listener.GermListener;
 import demon.utils.config.ConfigUtils;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
@@ -35,7 +37,7 @@ public final class MatchSystem extends JavaPlugin
 
     private void listenerInit()
     {
-
+        Bukkit.getPluginManager().registerEvents(new GermListener(), this);
     }
 
     private void commandInit()

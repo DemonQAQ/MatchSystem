@@ -87,13 +87,14 @@ public abstract class DungeonGuiManager
             GermGuiLabel dungeonName = dungeonNameTemplate.clone();
             dungeonName.setText(info.dungeonName + ":" + e.difficultyName);
 
-            button.setLocationY((113 + (111 * i)) * scale);
+            button.setLocationY((4 + (111 * i)) * scale);
             dungeonName.setLocationY((18 + (111 * i)) * scale);
 
             button.setEnable(true);
             dungeonName.setEnable(true);
+            button.setChecked(i == 0);
 
-            button.setIndexName("button_" + i);
+            button.setIndexName("difficultyButton_" + i);
             dungeonName.setIndexName("dungeonName_" + i);
 
             buttonList.addGuiPart(button);
@@ -149,12 +150,12 @@ public abstract class DungeonGuiManager
             relicIcon.setEnable(!isData);
             label.setEnable(isData);
 
-            item.setLocationX((54 + gap * i) * scale);
+            item.setLocationX((48 + gap * i) * scale);
             itemBackBg.setLocationX((gap * i) * scale);
             itemLevelBg.setLocationX((gap * i) * scale);
             itemFrontBg.setLocationX((gap * i) * scale);
             relicIcon.setLocationX((gap * i) * scale);
-            label.setLocationX((47 + gap * i) * scale);
+            label.setLocationX((49 + gap * i) * scale);
 
             item.setIndexName("item_" + rewardItem.itemName);
             itemBackBg.setIndexName("itemBackBg_" + rewardItem.itemName);

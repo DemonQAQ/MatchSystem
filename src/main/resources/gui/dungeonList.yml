@@ -40,10 +40,68 @@ dungeonList:
     height: 'h*42/1080'
     swallow: true
     interactCooldown: 100
+  soloButton:
+    type: button
+    enable: true
+    defaultPath: 'local<->textures/teamSystem/dungeonList/soloButton.png'
+    hoverPath: 'local<->textures/teamSystem/dungeonList/soloButton_down.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: 'w*1072/1920'
+    locationY: 'h*985/1080'
+    locationZ: "1"
+    width: 'w*310/1920'
+    height: 'h*64/1080'
+    swallow: true
+    interactCooldown: 100
+  soloInfo:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "simhei"
+    fontSize: 26
+    stroke: 0.2
+    strokeColor: 0xFFF3E3B3
+    shadow: false
+    lineSpace: '0'
+    texts:
+      - "#FFF3E3B3单人挑战"
+    locationX: "w*1245/1920"
+    locationY: "h*1002/1080"
+    locationZ: "5"
+  teamButton:
+    type: button
+    enable: true
+    defaultPath: 'local<->textures/teamSystem/dungeonList/teamButton.png'
+    hoverPath: 'local<->textures/teamSystem/dungeonList/teamButton_down.png'
+    clickSound: 'germmod:按钮_按下'
+    locationX: 'w*1495/1920'
+    locationY: 'h*985/1080'
+    locationZ: "1"
+    width: 'w*310/1920'
+    height: 'h*64/1080'
+    swallow: true
+    interactCooldown: 100
+  teamInfo:
+    type: label
+    enable: true
+    align: "center"
+    scale: '1'
+    font: "simhei"
+    fontSize: 26
+    stroke: 0.2
+    strokeColor: 0xFFF3E3B3
+    shadow: false
+    lineSpace: '0'
+    texts:
+      - "#FFF3E3B3组队挑战"
+    locationX: "w*1670/1920"
+    locationY: "h*1002/1080"
+    locationZ: "5"
   dungeonBg:
     type: 0
     enable: true
-    path: 'local<->textures/teamSystem/dungeonList/bgNull.png'
+    path: 'local<->textures/team`System/dungeonList/bgNull.png'
     locationX: "w*936/1920"
     locationY: "h*139/1080"
     locationZ: "6"
@@ -179,7 +237,7 @@ dungeonList:
         type: item
         enable: false
         size: "w*84/1920"
-        locationX: 'w*54/1920'
+        locationX: 'w*48/1920'
         locationY: 'h*44/1080'
         locationZ: "1"
         itemStack:
